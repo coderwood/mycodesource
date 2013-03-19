@@ -1,0 +1,5 @@
+E:\allbyme\Easy\EasyCommon\bin\Release\EasyCommon.dll
+E:\allbyme\Easy\EasyCommon\bin\Release\EasyCommon.pdb
+E:\allbyme\Easy\EasyCommon\obj\Release\ResolveAssemblyReference.cache
+E:\allbyme\Easy\EasyCommon\obj\Release\EasyCommon.dll
+E:\allbyme\Easy\EasyCommon\obj\Release\EasyCommon.pdb

@@ -1,0 +1,10 @@
+E:\allbyme\EasyWellCode\EasyCommon\bin\Debug\EasyCommon.dll
+E:\allbyme\EasyWellCode\EasyCommon\bin\Debug\EasyCommon.pdb
+E:\allbyme\EasyWellCode\EasyCommon\obj\Debug\ResolveAssemblyReference.cache
+E:\allbyme\EasyWellCode\EasyCommon\obj\Debug\EasyCommon.dll
+E:\allbyme\EasyWellCode\EasyCommon\obj\Debug\EasyCommon.pdb
+E:\allbyme\EasyWellCode\EasyUtility\bin\Debug\EasyCommon.dll
+E:\allbyme\EasyWellCode\EasyUtility\bin\Debug\EasyCommon.pdb
+E:\allbyme\EasyWellCode\EasyUtility\obj\Debug\ResolveAssemblyReference.cache
+E:\allbyme\EasyWellCode\EasyUtility\obj\Debug\EasyCommon.dll
+E:\allbyme\EasyWellCode\EasyUtility\obj\Debug\EasyCommon.pdb
