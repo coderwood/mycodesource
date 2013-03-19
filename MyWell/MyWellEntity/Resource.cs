@@ -6,7 +6,7 @@ namespace MyWellEntity
     /// <summary>
     /// 资源实体类
     /// </summary>
-    public class ResourceEntity
+    public class Resource
     {
         /// <summary>
         ///  唯一标识

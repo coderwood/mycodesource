@@ -31,6 +31,7 @@
             this.txtSearchContent = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.dgvResourceList = new System.Windows.Forms.DataGridView();
+            this.btnAddResource = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResourceList)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,21 +55,32 @@
             // dgvResourceList
             // 
             this.dgvResourceList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvResourceList.Location = new System.Drawing.Point(111, 134);
+            this.dgvResourceList.Location = new System.Drawing.Point(42, 78);
             this.dgvResourceList.Name = "dgvResourceList";
             this.dgvResourceList.RowTemplate.Height = 23;
-            this.dgvResourceList.Size = new System.Drawing.Size(240, 150);
+            this.dgvResourceList.Size = new System.Drawing.Size(709, 404);
             this.dgvResourceList.TabIndex = 2;
             // 
-            // Form1
+            // btnAddResource
+            // 
+            this.btnAddResource.Location = new System.Drawing.Point(615, 34);
+            this.btnAddResource.Name = "btnAddResource";
+            this.btnAddResource.Size = new System.Drawing.Size(75, 23);
+            this.btnAddResource.TabIndex = 3;
+            this.btnAddResource.Text = "增加";
+            this.btnAddResource.UseVisualStyleBackColor = true;
+            this.btnAddResource.Click += new System.EventHandler(this.btnAddResource_Click);
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(802, 494);
+            this.Controls.Add(this.btnAddResource);
             this.Controls.Add(this.dgvResourceList);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtSearchContent);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dgvResourceList)).EndInit();
             this.ResumeLayout(false);
@@ -81,6 +93,7 @@
         private System.Windows.Forms.TextBox txtSearchContent;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.DataGridView dgvResourceList;
+        private System.Windows.Forms.Button btnAddResource;
     }
 }
 
