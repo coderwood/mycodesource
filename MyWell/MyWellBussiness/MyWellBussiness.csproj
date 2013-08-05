@@ -40,13 +40,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MainFormPresenter.cs" />
     <Compile Include="ResourceBussiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\CommonLayer\Easy.Common.Core\Easy.Common.Core.csproj">
+      <Project>{BE9B394D-250B-4613-B409-4EDB0555503F}</Project>
+      <Name>Easy.Common.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EasyWellDataAccess\MyWellDataAccess.csproj">
       <Project>{CC09446B-8361-4E51-8D1A-34C8CEB9CCBC}</Project>
       <Name>MyWellDataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyWellAppEntity\MyWellAppEntity.csproj">
+      <Project>{68591235-6F09-42F7-A023-4267D61F397D}</Project>
+      <Name>MyWellAppEntity</Name>
     </ProjectReference>
     <ProjectReference Include="..\MyWellEntity\MyWellEntity.csproj">
       <Project>{E584537D-5C14-4A30-B32E-2AACCA0BB432}</Project>

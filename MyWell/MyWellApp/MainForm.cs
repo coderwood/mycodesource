@@ -8,10 +8,11 @@ using System.Text;
 using System.Windows.Forms;
 using MyWellEntity;
 using MyWellBussiness;
+using MyWellAppEntity;
 
 namespace MyWellApp
 {
-    public partial class MainForm : Form
+    public partial class MainForm : Form, IMainForm
     {
         public MainForm()
         {

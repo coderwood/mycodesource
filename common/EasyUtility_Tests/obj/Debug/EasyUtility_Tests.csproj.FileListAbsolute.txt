@@ -1,7 +1,0 @@
-E:\allbyme\EasyWellCode\EasyUtility_Tests\bin\Debug\EasyUtility_Tests.dll
-E:\allbyme\EasyWellCode\EasyUtility_Tests\bin\Debug\EasyUtility_Tests.pdb
-E:\allbyme\EasyWellCode\EasyUtility_Tests\bin\Debug\EasyCommon.dll
-E:\allbyme\EasyWellCode\EasyUtility_Tests\bin\Debug\EasyCommon.pdb
-E:\allbyme\EasyWellCode\EasyUtility_Tests\obj\Debug\ResolveAssemblyReference.cache
-E:\allbyme\EasyWellCode\EasyUtility_Tests\obj\Debug\EasyUtility_Tests.dll
-E:\allbyme\EasyWellCode\EasyUtility_Tests\obj\Debug\EasyUtility_Tests.pdb
