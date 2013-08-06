@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using EasyWellEntity;
 using EasyWellData;
-using EasyCommon;
+using EasyUtility;
 
 namespace EasyWellBusiness
 {
@@ -33,25 +33,16 @@ namespace EasyWellBusiness
         /// <param name="person"></param>
         public Person InitPerson()
         {
+            Random random = new Random();
+
             Person person = new Person();
             person.Name = "皮兴甜";
-            person.Sex = GetRandomSex();
-            person.PersonType = "student";
-            person.IDCardNO = "";
-            person.Age = 27;
-            person.BirthDay = DateTime.Parse("1986-06-22");
+            person.Sex = random.NextEnum<EnumCommon.GenderEnum>();
+            person.PersonType = random.NextEnum<EnumCommon.PersonTypeEnum>(); ;
+            //person.IDCardNO = random.Next(10000000000000000,999999999999999999); //todo junkezhang
+            person.Age = random.Next(13,99);
+            person.BirthDay = random.NextDateTime();
             return person;
-        }
-
-        /// <summary>
-        /// 随机获取性别
-        /// </summary>
-        /// <returns></returns>
-        private string GetRandomString(Enum enumInfo)
-        {
-            Random random = new Random();
-            int i = random.Next(1, Enum.GetNames(typeof(enumInfo)).Length);
-            return ((GenderEnum)i).ToString();
         }
     }
 }

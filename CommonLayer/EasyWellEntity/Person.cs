@@ -23,7 +23,7 @@ namespace EasyWellEntity
         /// <summary>
         /// 性别
         /// </summary>
-        public string Sex { get; set; }
+        public EnumCommon.GenderEnum Sex { get; set; }
 
         /// <summary>
         /// 出生日期
@@ -43,6 +43,6 @@ namespace EasyWellEntity
         /// <summary>
         /// 人员类别
         /// </summary>
-        public string PersonType { get; set; }
+        public EnumCommon.PersonTypeEnum PersonType { get; set; }
     }
 }

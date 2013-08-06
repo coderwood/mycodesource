@@ -16,7 +16,7 @@ namespace EasyWellData
             try
             {
                 sqlConn.Open();
-                string commText="insert into person(name,sex,birthday,age,idcardno,persontype) values('"+person.Name+"','"+person.Sex+"','"+person.BirthDay+"',"+person.Age+",'"+person.IDCardNO+"','"+person.PersonType+"')";
+                string commText="insert into person(name,sex,birthday,age,idcardno,persontype) values('"+person.Name+"','"+person.Sex.ToString()+"','"+person.BirthDay+"',"+person.Age+",'"+person.IDCardNO+"','"+person.PersonType+"')";
                 SqlCommand sqlComm = new SqlCommand(commText, sqlConn);
                 sqlComm.ExecuteNonQuery();
             }

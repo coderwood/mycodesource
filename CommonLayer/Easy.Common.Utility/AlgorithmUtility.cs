@@ -65,5 +65,39 @@ namespace EasyUtility
             j = k;
         }
         #endregion
+
+        #region 十进制转二进制
+        /// <summary>
+        /// 十进制转二进制
+        /// </summary>
+        /// <param name="input">十进制数</param>
+        /// <returns>转换后的二进制数</returns>
+        public static string DToB(int input)
+        {
+            string result = string.Empty;
+            StringBuilder sb = new StringBuilder();
+
+            if (input < 2)
+            {
+                result = input.ToString();
+            }
+            else
+            {
+                int m = 0; //余数
+                while (input > 1)
+                {
+                    int tmp = 0;
+                    tmp = input;
+
+                    input = input / 2;
+                    m = tmp % 2;
+                    result += m.ToString();
+                }
+                result = 1 + StringUtility.ReverseStringByCharBuffer(result);
+            }
+
+            return result;
+        }
+        #endregion 
     }
 }

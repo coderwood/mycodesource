@@ -1,17 +1,15 @@
-﻿using EasyWellBusiness;
+﻿using EasyUtility;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
 namespace EasyWellBusinessTest
 {
-    
-    
     /// <summary>
-    ///This is a test class for PersonBussinessTest and is intended
-    ///to contain all PersonBussinessTest Unit Tests
+    ///This is a test class for ExtentionMethodTest and is intended
+    ///to contain all ExtentionMethodTest Unit Tests
     ///</summary>
     [TestClass()]
-    public class PersonBussinessTest
+    public class ExtentionMethodTest
     {
 
 
@@ -65,20 +63,46 @@ namespace EasyWellBusinessTest
 
 
         /// <summary>
-        ///A test for GetRandomSex
+        ///A test for NextEnum
+        ///</summary>
+        public void NextEnumTestHelper<T>()
+            where T : struct
+        {
+            Random random = new Random();
+            T expected =new T();
+            T actual;
+            actual = ExtentionMethod.NextEnum<T>(random);
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void NextEnumTest()
+        {
+            Assert.Inconclusive("No appropriate type parameter is found to satisfies the type constraint(s) of T. " +
+                    "Please call NextEnumTestHelper<T>() with appropriate type parameters.");
+        }
+
+        /// <summary>
+        ///A test for NextBool
         ///</summary>
         [TestMethod()]
-        [DeploymentItem("EasyWellBusiness.dll")]
-        public void GetRandomSexTest()
+        public void NextBoolTest()
         {
-            PersonBussiness_Accessor target = new PersonBussiness_Accessor(); // TODO: Initialize to an appropriate value
-            string expected = "Male,Female,Unknown"; 
-            string actual;
-            for (int i = 0; i < 1000; i++)
+            Random random = new Random();
+            bool actual;
+            int countAll = 10000;
+            int countTrue = 0;
+            int countFalse = 0;
+            for (int i = 0; i < countAll; i++)
             {
-                actual = "";// target.GetRandomSex();
-                Assert.IsTrue(expected.IndexOf(actual) >= 0);
+                actual = ExtentionMethod.NextBool(random);
+                if (actual)
+                    countTrue++;
+                else
+                    countFalse++;
             }
+            Assert.IsTrue(countAll == (countFalse + countTrue));
+            Assert.IsTrue(countFalse > 0.9 * countTrue || countTrue > 0.9 * countFalse);
         }
     }
 }

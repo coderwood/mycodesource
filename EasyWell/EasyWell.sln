@@ -22,6 +22,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Easy.Common.WebUtility", "..\CommonLayer\Easy.Common.WebUtility\Easy.Common.WebUtility.csproj", "{E540FBE4-8D2B-4DB7-B1FB-6F9952F9BBAF}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = EasyWell.vsmdi
@@ -95,6 +97,16 @@ Global
 		{029A99E9-5EF2-45EF-B695-A1211CA32CD8}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{029A99E9-5EF2-45EF-B695-A1211CA32CD8}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{029A99E9-5EF2-45EF-B695-A1211CA32CD8}.Release|x86.ActiveCfg = Release|Any CPU
+		{E540FBE4-8D2B-4DB7-B1FB-6F9952F9BBAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E540FBE4-8D2B-4DB7-B1FB-6F9952F9BBAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E540FBE4-8D2B-4DB7-B1FB-6F9952F9BBAF}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E540FBE4-8D2B-4DB7-B1FB-6F9952F9BBAF}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{E540FBE4-8D2B-4DB7-B1FB-6F9952F9BBAF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E540FBE4-8D2B-4DB7-B1FB-6F9952F9BBAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E540FBE4-8D2B-4DB7-B1FB-6F9952F9BBAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E540FBE4-8D2B-4DB7-B1FB-6F9952F9BBAF}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E540FBE4-8D2B-4DB7-B1FB-6F9952F9BBAF}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E540FBE4-8D2B-4DB7-B1FB-6F9952F9BBAF}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -102,5 +114,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{8F248DAA-5727-4BF8-B523-715D740720FA} = {D60666F9-6742-4F02-9E51-EF6BBDB6BD99}
 		{E32F9ED3-32C3-45A9-9CAD-C1147A00848E} = {D60666F9-6742-4F02-9E51-EF6BBDB6BD99}
+		{E540FBE4-8D2B-4DB7-B1FB-6F9952F9BBAF} = {D60666F9-6742-4F02-9E51-EF6BBDB6BD99}
 	EndGlobalSection
 EndGlobal

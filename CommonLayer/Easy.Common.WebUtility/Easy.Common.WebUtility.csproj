@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{E32F9ED3-32C3-45A9-9CAD-C1147A00848E}</ProjectGuid>
+    <ProjectGuid>{E540FBE4-8D2B-4DB7-B1FB-6F9952F9BBAF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EasyWellEntity</RootNamespace>
-    <AssemblyName>EasyWellEntity</AssemblyName>
+    <RootNamespace>Easy.Common.WebUtility</RootNamespace>
+    <AssemblyName>Easy.Common.WebUtility</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,8 +31,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Castle.Components.Binder">
+      <HintPath>..\Easy.Common.CommDLL\Castle.Components.Binder.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\Easy.Common.CommDLL\Castle.Core.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,13 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Course.cs" />
-    <Compile Include="EnumCommon.cs" />
-    <Compile Include="Person.cs" />
+    <Compile Include="JudgJavaScript.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Score.cs" />
-    <Compile Include="Student.cs" />
-    <Compile Include="Teacher.cs" />
+    <Compile Include="WebPageUtil.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
