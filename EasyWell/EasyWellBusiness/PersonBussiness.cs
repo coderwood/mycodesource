@@ -36,12 +36,12 @@ namespace EasyWellBusiness
             Random random = new Random();
 
             Person person = new Person();
-            person.Name = "皮兴甜";
+            person.Name = "张克";//todo junkezhang 姓名随机生成
             person.Sex = random.NextEnum<EnumCommon.GenderEnum>();
-            person.PersonType = random.NextEnum<EnumCommon.PersonTypeEnum>(); ;
-            //person.IDCardNO = random.Next(10000000000000000,999999999999999999); //todo junkezhang
+            person.PersonType = random.NextEnum<EnumCommon.PersonTypeEnum>();
+            person.IDCardNO = random.Next(111111,999999).ToString(); //todo junkezhang 身份证号码随机生成
             person.Age = random.Next(13,99);
-            person.BirthDay = random.NextDateTime();
+            person.BirthDay = random.NextDateTime(DateTime.Now.AddYears(-100), DateTime.Now.AddYears(-10));
             return person;
         }
     }

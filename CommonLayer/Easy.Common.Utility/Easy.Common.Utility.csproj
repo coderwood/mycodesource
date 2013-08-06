@@ -8,7 +8,7 @@
     <ProjectGuid>{8F248DAA-5727-4BF8-B523-715D740720FA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EasyCommon</RootNamespace>
+    <RootNamespace>EasyUtility</RootNamespace>
     <AssemblyName>EasyUtility</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -53,6 +53,9 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\Easy.Common.CommDLL\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core">
@@ -69,6 +72,7 @@
     <Compile Include="CommonUtility.cs" />
     <Compile Include="DataTypeHelper.cs" />
     <Compile Include="DeletsSQLKeyword.cs" />
+    <Compile Include="EasyLog.cs" />
     <Compile Include="EasyXmlSerializer.cs" />
     <Compile Include="EntityHelper.cs" />
     <Compile Include="ExpandHelper.cs" />

@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using EasyWellEntity;
 using EasyWellBusiness;
+using EasyUtility;
 
 namespace EasyWellTool
 {
@@ -22,13 +23,17 @@ namespace EasyWellTool
         {
             List<Person> personList = new List<Person>();
             PersonBussiness pb = new PersonBussiness();
-            Person person = pb.InitPerson();
-
-            personList.Add(person);
+            for (int i = 0; i < 1000; i++)
+            {
+                log4net.ILog log = EasyLog.GetInstance();
+                log.Info("start " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff"));
+                Person person = pb.InitPerson();
+                personList.Add(person);
+                log.Info("end   " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff"));
+            }
 
             foreach (Person p in personList)
             {
-                
                 pb.AddPerson(p);
             }
         }

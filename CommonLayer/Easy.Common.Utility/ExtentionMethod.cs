@@ -44,7 +44,17 @@ namespace EasyUtility
         /// <returns></returns>
         public static DateTime NextDateTime(this Random random)
         {
-            long ticket = DateTime.MinValue.Ticks+(long)((DateTime.MaxValue.Ticks-DateTime.MinValue.Ticks)*random.NextDouble());
+            return NextDateTime(random, DateTime.MinValue, DateTime.MaxValue);
+        }
+
+        /// <summary>
+        /// 生成随机日期
+        /// </summary>
+        /// <param name="random"></param>
+        /// <returns></returns>
+        public static DateTime NextDateTime(this Random random,DateTime minValue,DateTime maxValue)
+        {
+            long ticket = minValue.Ticks + (long)((maxValue.Ticks - minValue.Ticks) * random.NextDouble());
             return new DateTime(ticket);
         }
     }

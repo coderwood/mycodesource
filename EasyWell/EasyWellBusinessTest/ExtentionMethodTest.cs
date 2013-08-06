@@ -104,5 +104,37 @@ namespace EasyWellBusinessTest
             Assert.IsTrue(countAll == (countFalse + countTrue));
             Assert.IsTrue(countFalse > 0.9 * countTrue || countTrue > 0.9 * countFalse);
         }
+
+        /// <summary>
+        ///A test for NextDateTime
+        ///</summary>
+        [TestMethod()]
+        public void NextDateTimeTest()
+        {
+            Random random = new Random();
+            DateTime actual;
+            for (int i = 0; i < 1000; i++)
+            {
+                actual = ExtentionMethod.NextDateTime(random);
+                Assert.IsTrue(actual.Year > 0);
+            }
+        }
+
+        /// <summary>
+        ///A test for NextDateTime
+        ///</summary>
+        [TestMethod()]
+        public void NextDateTimeTest1()
+        {
+            Random random = new Random();
+            DateTime minValue = DateTime.Parse("1900-01-01");
+            DateTime maxValue = DateTime.Now.AddYears(-10);
+            DateTime actual;
+            for (int i = 0; i < 1000; i++)
+            {
+                actual = ExtentionMethod.NextDateTime(random, minValue, maxValue);
+                Assert.IsTrue(actual > minValue && actual < maxValue);
+            }
+        }
     }
 }
